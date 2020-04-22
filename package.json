@@ -1,0 +1,14 @@
+{
+  "name": "nod.js_ecosystem",
+  "version": "1.0.0",
+  "description": "practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kağan Candoğan",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.0.0"
+  }
+}
