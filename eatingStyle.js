@@ -1,15 +1,19 @@
 const chalk = require("chalk");
 module.exports = class EatingStyle {
-  constructor(name) {
+  constructor(name, attendees = []) {
     this.name = name;
-    this.attendees = [];
+    this.attendees = attendees;
   }
+  static create({ name, attendees }) {
+    return new EatingStyle(name, attendees);
+  }
+
   printAttendees() {
     this.attendees.forEach((name) => console.log(name));
   }
   printAttendeesName() {
     this.attendees.forEach((name) =>
-      console.log(chalk.yellow.bgRed.bold(name.name))
+      console.log(chalk.yellow.bgBlack.bold(name.name))
     );
   }
 };
